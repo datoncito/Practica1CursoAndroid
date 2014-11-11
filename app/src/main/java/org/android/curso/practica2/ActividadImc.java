@@ -21,11 +21,8 @@ public class ActividadImc extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_actividad_imc);
         Typeface tf = Typeface.createFromAsset(this.getAssets(), "boy.ttf");
-     TextView texto= (TextView) findViewById(R.id.textView);
-        texto.setTypeface(tf);
 
-        TextView txto2= (TextView) findViewById(R.id.textView2);
-        txto2.setTypeface(tf);
+
 
          peso= (EditText) findViewById(R.id.editPeso);
         peso.setTypeface(tf);

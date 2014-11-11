@@ -8,61 +8,43 @@
     android:background="@drawable/barbells">
 
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Peso"
-        style="@style/miestiloTextos"
-        android:id="@+id/textView"
-        android:layout_below="@+id/textView"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
     <EditText
         android:layout_width="fill_parent"
-        android:layout_height="26dp"
+        android:layout_height="43dp"
         android:inputType="numberDecimal"
         android:ems="10"
         android:id="@+id/editPeso"
-        android:layout_below="@+id/textView"
+        android:hint="INTRODUCE TU PESO"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        style="@style/miestiloTextos"
-        android:background="@drawable/mitexto"
-        android:alpha="0.5" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Altura"
-        style="@style/miestiloTextos"
-        android:id="@+id/textView2"
-        android:layout_below="@+id/editPeso"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:background="@drawable/mitexto"
+        android:alpha="0.7"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="7dp" />
 
     <EditText
         android:layout_width="fill_parent"
-        android:layout_height="26dp"
+        android:layout_height="43dp"
         android:inputType="numberDecimal"
         android:ems="10"
         android:id="@+id/editText"
-        style="@style/miestiloTextos"
-        android:layout_below="@+id/textView2"
+        android:hint="INTRODUCE TU ALTURA"
+
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:background="@drawable/mitexto"
         android:layout_marginBottom="5dp"
-        android:alpha="0.5" />
+        android:alpha="0.7"
+        android:layout_below="@+id/editPeso" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="CALCULAR IMC"
         android:id="@+id/botonCalcular"
         android:onClick="calcularImc"
+
         android:layout_below="@+id/editText"
         android:layout_centerHorizontal="true"
         android:background="@drawable/mibotoncito"
@@ -76,8 +58,7 @@
         android:id="@+id/textoResultado"
         style="@style/miestiloTextos"
 
-        android:layout_marginTop="79dp"
-        android:layout_below="@+id/botonCalcular"
+        android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
