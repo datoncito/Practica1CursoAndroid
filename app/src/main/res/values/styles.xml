@@ -1,0 +1,19 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="miestiloTextos">
+        <item name="android:textColor">#D0EAFA</item>
+    </style>
+    <style name="textoGrandote">
+
+    </style>
+    <style name="misBotones">
+        <item name="android:padding">7px</item>
+        <item name="android:radius">10dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+</resources>
