@@ -1,6 +1,7 @@
 package org.android.curso.practica2;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.Menu;
@@ -41,6 +42,9 @@ public class ActividadImc extends Activity {
         resultado.setTypeface(tf);
 
 
+        Button sal= (Button) findViewById(R.id.textView3);
+        sal.setTypeface(tf);
+
 
 
 
@@ -78,5 +82,14 @@ public class ActividadImc extends Activity {
         float a=Float.parseFloat(altura.getText().toString());
         float imc=p/(a*a);
         resultado.setText("Tu imc es: "+imc);
+    }
+
+    public void salir(View v){
+       this.finish();
+
+
+
+
+
     }
 }

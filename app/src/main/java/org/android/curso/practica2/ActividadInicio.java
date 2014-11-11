@@ -54,5 +54,6 @@ public class ActividadInicio extends Activity {
 
          Intent i=new Intent(getApplicationContext(),ActividadMenu.class);
         startActivity(i);
+        this.finish();
     }
 }

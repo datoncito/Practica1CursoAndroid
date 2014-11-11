@@ -58,5 +58,6 @@ public class ActividadMenu extends Activity {
     public void irImc(View v){
         Intent i=new Intent(getApplicationContext(),ActividadImc.class);
         startActivity(i);
+        this.finish();
     }
 }
