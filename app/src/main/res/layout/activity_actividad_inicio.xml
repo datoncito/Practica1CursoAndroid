@@ -30,4 +30,17 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_marginBottom="36dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Consejos de entrenamiento y nutricion"
+       style="@style/miestiloTextos"
+        android:id="@+id/textoNutricion"
+        android:layout_toStartOf="@+id/button"
+        android:layout_above="@+id/button"
+        android:layout_alignRight="@+id/button"
+        android:layout_alignEnd="@+id/button"
+        android:layout_marginBottom="65dp" />
 </RelativeLayout>

@@ -23,6 +23,9 @@ public class ActividadInicio extends Activity {
     Button boton1= (Button) findViewById(R.id.button);
         boton1.setTypeface(tf);
 
+        TextView texto2= (TextView) findViewById(R.id.textoNutricion);
+        texto2.setTypeface(tf);
+
 
     }
 
