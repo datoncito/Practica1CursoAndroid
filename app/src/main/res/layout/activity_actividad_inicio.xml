@@ -21,7 +21,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-       style="@style/misBotones"
+        style="@style/botonFeo"
         android:text="INGRESAR"
         android:id="@+id/button"
         android:background="@drawable/mibotoncito"
@@ -38,7 +38,6 @@
         android:text="Consejos de entrenamiento y nutricion"
        style="@style/miestiloTextos"
         android:id="@+id/textoNutricion"
-        android:layout_toStartOf="@+id/button"
         android:layout_above="@+id/button"
         android:layout_alignRight="@+id/button"
         android:layout_alignEnd="@+id/button"
