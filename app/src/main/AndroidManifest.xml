@@ -28,6 +28,11 @@
             android:name="org.android.curso.practica2.ActividadImc"
             android:label="@string/title_activity_actividad_imc" >
         </activity>
+        <activity
+            android:name="org.android.curso.practica2.ActividadHistorialImc"
+            android:label="@string/title_activity_actividad_historial_imc" >
+        </activity>
     </application>
-
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 </manifest>

@@ -59,9 +59,10 @@
         android:id="@+id/textoResultado"
         style="@style/miestiloTextos"
 
-        android:layout_centerVertical="true"
+        android:layout_below="@+id/guardarImc"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="77dp" />
 
     <Button
         android:layout_width="wrap_content"
@@ -75,7 +76,19 @@
 
         android:layout_below="@+id/textoResultado"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="42dp" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="guardar imc"
+        android:id="@+id/guardarImc"
+        android:layout_below="@+id/botonCalcular"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/mibotoncito"
+        android:onClick="guardarImc"
+        style="@style/miestiloTextos" />
 
 
 </RelativeLayout>

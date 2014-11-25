@@ -11,11 +11,14 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.util.Date;
+
 
 public class ActividadImc extends Activity {
     EditText peso;
     EditText altura;
     TextView resultado;
+    float imc;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,6 +44,9 @@ public class ActividadImc extends Activity {
 
         Button sal= (Button) findViewById(R.id.textView3);
         sal.setTypeface(tf);
+
+        Button guardarImc= (Button) findViewById(R.id.guardarImc);
+        guardarImc.setTypeface(tf);
 
 
 
@@ -77,15 +83,24 @@ public class ActividadImc extends Activity {
     public void calcularImc(View v){
       float p=  Float.parseFloat(peso.getText().toString());
         float a=Float.parseFloat(altura.getText().toString());
-        float imc=p/(a*a);
+         imc=p/(a*a);
         resultado.setText("Tu imc es: "+imc);
+    }
+
+    public void guardarImc(View v){
+        Imc i=new Imc();
+        i.setFecha(new Date());
+        i.setImc(imc);
+        PersistenciaHistorial p=new PersistenciaHistorial();
+        p.guardarImc(i);
+        resultado.setText("Imc guardado con exito:"+imc);
+
+        peso.setText(null);
+        altura.setText(null);
     }
 
     public void salir(View v){
        this.finish();
-
-
-
 
 
     }

@@ -1,7 +1,6 @@
 package org.android.curso.practica2;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.Menu;
@@ -10,36 +9,28 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.util.ArrayList;
 
-public class ActividadMenu extends Activity {
 
+public class ActividadHistorialImc extends Activity {
+TextView textoHistorial;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_actividad_menu);
+        setContentView(R.layout.actividad_historial_imc);
         Typeface tf = Typeface.createFromAsset(this.getAssets(), "boy.ttf");
-     Button b5= (Button) findViewById(R.id.button5);
+        Button b5= (Button) findViewById(R.id.recobrarHistorial);
         b5.setTypeface(tf);
 
-        Button b6= (Button) findViewById(R.id.button6);
-        b6.setTypeface(tf);
-
-        Button b7= (Button) findViewById(R.id.button7);
-        b7.setTypeface(tf);
-
-        Button verHistrorial= (Button) findViewById(R.id.verHistorial);
-        verHistrorial.setTypeface(tf);
-
-        TextView nal= (TextView) findViewById(R.id.textoNalgas);
-        nal.setTypeface(tf);
-
+         textoHistorial = (TextView) findViewById(R.id.textoResultadoHistorial);
+        textoHistorial.setTypeface(tf);
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_actividad_menu, menu);
+        getMenuInflater().inflate(R.menu.menu_actividad_historial_imc, menu);
         return true;
     }
 
@@ -58,15 +49,9 @@ public class ActividadMenu extends Activity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void irImc(View v){
-        Intent i=new Intent(getApplicationContext(),ActividadImc.class);
-        startActivity(i);
-        this.finish();
-    }
-
     public void recobrarHistorial(View v){
-        Intent i=new Intent(getApplicationContext(),ActividadHistorialImc.class);
-        startActivity(i);
-        this.finish();
+        PersistenciaHistorial p=new PersistenciaHistorial();
+      ArrayList<Imc> historial= p.leerHistorial();
+        textoHistorial.setText("Tamaño:"+historial.size() +"y el usuario fue con fecha "+historial.get(1).getFecha());
     }
 }

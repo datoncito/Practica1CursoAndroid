@@ -60,4 +60,17 @@
         android:layout_marginRight="60dp"
         android:layout_marginTop="43dp" />
 
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Ver historia IMC"
+        android:id="@+id/verHistorial"
+        android:layout_marginBottom="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/mibotoncito"
+        style="@style/miestiloTextos"
+        android:onClick="recobrarHistorial" />
+
 </RelativeLayout>

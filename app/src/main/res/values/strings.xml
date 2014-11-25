@@ -7,5 +7,6 @@
     <string name="title_activity_menu">Menu</string>
     <string name="title_activity_actividad_menu">ActividadMenu</string>
     <string name="title_activity_actividad_imc">ActividadImc</string>
+    <string name="title_activity_actividad_historial_imc">ActividadHistorialImc</string>
 
 </resources>
