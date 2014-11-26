@@ -52,6 +52,7 @@ TextView textoHistorial;
     public void recobrarHistorial(View v){
         PersistenciaHistorial p=new PersistenciaHistorial();
       ArrayList<Imc> historial= p.leerHistorial();
-        textoHistorial.setText("Tamaño:"+historial.size() +"y el usuario fue con fecha "+historial.get(1).getFecha());
+        textoHistorial.setText("Tamaño:"+historial.size() +"y el usuario fue con fecha "
+                +historial.get(2).getFecha());
     }
 }
